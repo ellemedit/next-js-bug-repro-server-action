@@ -1,17 +1,13 @@
 "use client";
 
-import { testAction } from "../../actions";
+import { Button } from "./components/Button";
 
 export const dynamic = "force-dynamic";
 
 export default function Page() {
   return (
-    <form
-      action={async () => {
-        console.log(await testAction());
-      }}
-    >
-      <button>submit</button>
+    <form>
+      <Button />
     </form>
   );
 }

@@ -1,5 +1,13 @@
+"use client";
+
+import { Button } from "../components/Button";
+
 export const dynamic = "force-dynamic";
 
 export default function Page() {
-  return <div>test</div>;
+  return (
+    <form>
+      <Button />
+    </form>
+  );
 }
